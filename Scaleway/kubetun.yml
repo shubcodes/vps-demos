@@ -1,0 +1,10 @@
+apiVersion: ingress.k8s.ngrok.com/v1alpha1
+kind: Tunnel
+metadata:
+ name: k8s-scw-tunnel
+spec:
+  backend:
+    protocol: HTTP
+  forwardsTo: k8s-scw.default.svc.cluster.local:80
+  labels:
+    location: k8s

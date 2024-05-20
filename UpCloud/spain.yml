@@ -1,0 +1,9 @@
+authtoken: 
+version: 2
+tunnels:
+  test:
+    addr: http://localhost:80
+    labels:
+      - application=web
+      - environment=production
+      - location=spain
